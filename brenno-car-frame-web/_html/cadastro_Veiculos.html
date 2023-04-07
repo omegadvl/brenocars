@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_css/BrennoCar/style.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_1366.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_mobile_764.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_mobile_384.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_tablet.css">
+    <link rel= "icon" 	   href="../_icones/BrennoCar/favicon/favicon_BrennoCar.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://www.tabelafipebrasil.com/api/js/tabelafipe-widget.min.js"></script>
+    <title>Cadastro - Veículos</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-principal">
+                <nav>
+                    <ul>
+                        <li><a href="#">OS-Serviço</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="cadastro_Fornecedores.html">Fornecedores</a></li>
+                        <li><a href="cadastroC_Fisica.html">Clientes</a></li>
+                        <li><a href="Menu.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">OS-Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="razaosocial">
+                <span class="razaosocial_nome">Brenno Car - Auto Elétrica</span>
+            </div>
+            <div class="logado">
+                <a href="index.html">Sair</a>
+                <span>Bem vindo - Fulado de tal</span>
+            </div>
+            <div class="nomempresa">
+            </div> 
+            <div class="logo-injecao-eletronica">
+                <img src="../_images/BrennoCar/Injecao_eletronica-499x499.png" alt="">
+            </div>
+        </div>  
+    </header>
+    <main>
+        <span class="veiculos">Veículos</span>
+        <form id="formulario" method="post" action=".">
+            <div>
+                <label class="pesquisa_CF">Selecione:</label><br>
+                <input type="text" autofocus id="pesquisa_cf" placeholder="Cliente/Fornecedor/Razão Social - Caixa Seleção BD">
+                <label class="ano">Ano:</label>
+                <input type="text" id="ano" maxlength="4" placeholder="Ano">
+                <label class="placa">Placa:</label>
+                <input type="text" id="placa" maxlength="7" placeholder="Placa"><br>
+                <label class="pesquisa_montadora">Montadora:</label><br>
+                <input type="text" id="montadora" maxlength="10" placeholder="Montadora - Caixa Seleção APIs"><br>
+                <label class="pesquisa_modelo">Modelo:</label><br>
+                <input type="text" id="modelo" maxlength="7" placeholder="Modelo - Caixa Seleção APIs"><br>
+                <label class="observacao">Mensagem:</label><br>
+                <textarea name="mensagem" id="observacao" cols="39" rows="5" maxlength="200" placeholder="Mensagem"></textarea>
+                <button class="cadastro" type="submit">CADASTRAR</button>
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="../_scripts/BrennoCar/montadoras_scripts.js"></script>
+</html>

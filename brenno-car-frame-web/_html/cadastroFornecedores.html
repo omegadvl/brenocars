@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_css/BrennoCar/style.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_mobile.css">
+    <link rel="stylesheet" href="../_css/BrennoCar/style_tablet.css">
+    <link rel= "icon" 		 href="../_icones/BrennoCar/favicon/favicon_BrennoCar.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Cadastro - Fornecedores</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-principal">
+                <nav>
+                    <ul>
+                        <li><a href="#">OS-Serviço</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="cadastroVeiculos.html">Veículos</a></li>
+                        <li><a href="cadastroC_Fisica.html">Clientes</a></li>
+                        <li><a href="Menu.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">OS-Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="razaosocial">
+                <span class="razaosocial_nome">Brenno Car - Auto Elétrica</span>
+            </div>
+            <div class="logado">
+                <a href="index.html">Sair</a>
+                <span>Bem vindo - Fulado de tal</span>
+            </div>
+            <div class="nomempresa">
+            </div> 
+            <div class="logo-injecao-eletronica">
+                <img src="../_images/BrennoCar/Injecao_eletronica-499x499.png" alt="">
+            </div>
+            
+        </div>  
+    </header>
+    <main>
+        <span class="fornecedores">Fornecedores</span>
+        <form id="formulario" method="post">
+            <div>
+                <input type="text" autofocus id="razaosocial" placeholder="Razão Social">
+                <input type="number" id="cnpj" placeholder="CNPJ"><br>
+                <input type="text" id="nomefantasia" placeholder="Nome Fantasia">
+                <input type="text" id="segmento" placeholder="Segmento"><br>
+                <input type="text" id="contato" placeholder="Contato"><br>
+                <input type="text" id="endereco" placeholder="Endereço">
+                <input type="text" id="cidade" placeholder="Cidade"><br>
+                <input type="text" id="estado" placeholder="Estado">
+                <input type="text" id="cep" placeholder="CEP">
+                <input type="text" id="uf" placeholder="UF"><br>
+                <input type="tel" id="telefone" placeholder="Telefone">
+                <input type="tel" id="celular" placeholder="Celular"><br>
+                <input type="email" id="email" placeholder="E-mail"><br>
+                <input type="text" id="site_fornecedor" placeholder="Site"><br>
+                <button class="cadastro" type="submit">CADASTRAR</button>
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
