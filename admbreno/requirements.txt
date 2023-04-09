@@ -1,0 +1,5 @@
+python-dotenv==1.0.0
+wincertstore==0.2
+Django
+django-smart-selects==1.5.3
+six

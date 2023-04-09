@@ -1,0 +1,62 @@
+<!-- clientes/editar_cliente.html -->
+
+
+{% block content %}
+  <h1>Editar cliente</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <label for="id_nome">Nome:</label>
+      <input type="text" name="nome" id="id_nome" value="{{ cliente.nome }}">
+    </div>
+    <div>
+      <label for="id_sobrenome">Sobrenome:</label>
+      <input type="text" name="sobrenome" id="id_sobrenome" value="{{ cliente.sobrenome }}">
+    </div>
+    <div>
+      <label for="id_profissao">Profissão:</label>
+      <input type="text" name="profissao" id="id_profissao" value="{{ cliente.profissao }}">
+    </div>
+    <div>
+      <label for="id_cep">CEP:</label>
+      <input type="text" name="cep" id="id_cep" value="{{ cliente.cep }}">
+    </div>
+    <div>
+      <label for="id_endereco">Endereço:</label>
+      <input type="text" name="endereco" id="id_endereco" value="{{ cliente.endereco }}">
+    </div>
+    <div>
+      <label for="id_cidade">Cidade:</label>
+      <input type="text" name="cidade" id="id_cidade" value="{{ cliente.cidade }}">
+    </div>
+    <div>
+      <label for="id_email">E-mail:</label>
+      <input type="email" name="email" id="id_email" value="{{ cliente.email }}">
+    </div>
+    <div>
+      <label for="id_data_nascimento">Data de nascimento:</label>
+      <input type="date" name="data_nascimento" id="id_data_nascimento" value="{{ cliente.data_nascimento }}">
+    </div>
+    <div>
+      <label for="id_cpf">CPF:</label>
+      <input type="text" name="cpf" id="id_cpf" value="{{ cliente.cpf }}">
+    </div>
+    <div>
+      <label for="id_telefone">Telefone:</label>
+      <input type="text" name="telefone" id="id_telefone" value="{{ cliente.telefone }}">
+    </div>
+    <div>
+      <label for="id_celular">Celular:</label>
+      <input type="text" name="celular" id="id_celular" value="{{ cliente.celular }}">
+    </div>
+    <div>
+      <label for="id_estado">Estado:</label>
+      <input type="text" name="estado" id="id_estado" value="{{ cliente.estado }}">
+    </div>
+    <div>
+      <label for="id_uf">UF:</label>
+      <input type="text" name="uf" id="id_uf" value="{{ cliente.uf }}">
+    </div>
+    <button type="submit">Salvar alterações</button>
+  </form>
+{% endblock %}

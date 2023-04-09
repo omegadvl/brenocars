@@ -1,0 +1,9 @@
+@media screen and (min-width: 260px) and
+(max-width: 384px) {
+    .data{
+        display: none;
+    }
+    #observacao{
+        width: 160px;
+    }
+}

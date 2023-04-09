@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Veículos Cadastrados</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Ano</th>
+      <th>Placa</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for veiculo in veiculos %}
+    <tr>
+      <td>{{ veiculo.cliente.nome }}</td>
+      <td>{{ veiculo.marca }}</td>
+      <td>{{ veiculo.modelo }}</td>
+      <td>{{ veiculo.ano }}</td>
+      <td>{{ veiculo.placa }}</td>
+      <td>
+        <a href="{% url 'cadastro_servico' veiculo.id %}" class="btn btn-primary">Cadastrar Serviço</a>
+        <a href="{% url 'edita_veiculo' veiculo.pk %}" class="btn btn-warning">Editar</a>
+        <form action="{% url 'exclui_veiculo' veiculo.pk %}" method="POST" style="display: inline-block;">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este veiculo?')">Excluir</button>
+          </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<a href="{% url 'cadastro_veiculo' %}" class="btn btn-primary">Cadastrar Novo Veículo</a>
+
+{% endblock %}
