@@ -1,0 +1,9 @@
+{% block content %}
+  <h2>Excluir Cliente</h2>
+  <form action="{% url 'excluir_cliente' pk=cliente.pk %}" method="POST">
+    {% csrf_token %}
+    <p>Tem certeza que deseja excluir o cliente "{{ cliente }}"?</p>
+    <input type="submit" value="Excluir">
+    <a href="{% url 'lista_clientes' %}">Cancelar</a>
+  </form>
+{% endblock %}

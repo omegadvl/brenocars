@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Serviços</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Veículo</th>
+        <th>Descrição</th>
+        <th>Data/Hora</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for servico in servicos %}
+        <tr>
+          <td>{{ servico.veiculo.cliente.nome }}</td>
+          <td>{{ servico.veiculo.modelo }} ({{ servico.veiculo.placa }})</td>
+          <td>{{ servico.descricao }}</td>
+          <td>{{ servico.data_entrega}}</td>
+          <td>
+            <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-sm btn-primary">Editar</a>
+            <form action="{% url 'exclui_servico' servico.pk %}" method="POST" style="display: inline-block;">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
+          </form>
+          </td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5">Nenhum serviço encontrado.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,4 +1,4 @@
-"""brenocars URL Configuration
+"""admbreno URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+from django.contrib.auth.views import LoginView
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    path('clientesF/', include('clientesF.urls')),
     path("admin/", admin.site.urls),
+    path('login/', LoginView.as_view(template_name='login.html'), name='login'),
+    path('accounts/login/', LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    
 ]

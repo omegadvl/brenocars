@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Cadastrar serviço</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="{% url 'lista_clientes' %}" class="btn btn-secondary">Cancelar</a>
+  </form>
+{% endblock %}
+
+{% block extrajs %}
+  <script>
+    $(document).ready(function() {
+      // Bloqueia a edição dos campos cliente e veiculo
+      $('select#id_cliente').prop('disabled', true);
+      $('select#id_veiculo').prop('disabled', true);
+    });
+  </script>
+{% endblock %}
