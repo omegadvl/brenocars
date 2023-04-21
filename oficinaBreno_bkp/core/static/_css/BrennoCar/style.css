@@ -1,0 +1,303 @@
+@media screen and
+    (max-width: 1920px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-image: url(../../_images/BrennoCar/Car_Headlights_resize.jpg);
+        background-position: 50% 60px;
+        background-size: contain;
+        background-color: #090907;
+    }
+    .menu-principal{
+        display: block;
+    }
+    .menu-mobile{
+        display: none;
+    }
+
+    .form-control{
+        height: 34px;
+    }
+    .alert{
+        margin-top: -590px;
+        position: absolute;
+        height: 45px;
+        margin-left: 80vh;
+        border-radius: 10px;
+        width: 230px;
+        text-align: center;
+    }
+
+    #id_Nome,
+    #id_Estado{
+        margin-right: 50px;
+    }
+
+    #id_Cidade {
+        margin-right: 50px;
+        width: 200px;
+    }
+    #id_Nascimento{
+        margin-right: 50px;
+        width: 140px;
+    }
+
+    #id_Sobrenome, #id_Profissao,
+    #id_Endereco, #id_Bairro,
+    #id_Email, #id_Site,
+    #id_Contato, #id_RazaoSocial,
+    #id_NomeFantasia{
+        margin-right: 70px;
+        width: 310px;
+    }
+
+    #id_CPF{
+        margin-right: 50px;
+        width: 140px;
+        text-align: right;
+    }
+
+    #id_CNPJ{
+        width: 170px;
+        text-align: right;
+    }
+
+    #id_Telefone, #id_Celular,
+    #id_Cep{
+        margin-right: 50px;
+        width: 140px;
+    }
+
+    #id_UF {
+        margin-right: 50px;
+        width: 196px;
+    }
+
+    #id_Montadora, #id_Modelo,
+    #id_Ano, #id_Placa{
+        margin-right: 50px;
+        width: 140px;
+    }
+
+    #id_Mensagem {
+        margin-right: 50px;
+        width: 350px;
+        height: 80px;
+    }
+
+    label{
+        color: #FFFFFF;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma;
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .razaosocial_nome{
+        margin-top: -90px;
+        float: left;
+        margin-left: 90px;
+        font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .logo-injecao-eletronica img{
+        position: absolute;
+        margin-top: -95px;
+        margin-left: 20px;
+        width: 55px;
+    }
+    .clientes, .fornecedores,
+    .veiculos{
+        width: 23%;
+        display: flex;
+        color: #FFFFFF;
+        margin-top: 15px;
+        margin-left: 30vh;
+        font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .logado p{
+        display: none;
+    }
+    .logado a{
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        margin-top: -83px;
+        margin-right: 30px;
+        float: right;
+        color: #FFFFFF;
+    }
+    .logado span{
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: -80px;
+        margin-right: 80px;
+        float: right;
+        color: #FFFFFF;
+    }
+    small{
+        color: yellow;
+        font-size: 10px;
+    }
+    nav {
+        margin: 0;
+        /*background-color: rgba(198, 95, 95, 0.8);*/
+        border-radius: 0 0 25px 25px;
+        height: 100px;
+    }
+    li {
+        color: #FFFFFF;
+        margin-right: 18px;
+        margin-top: 64px;
+        float: right;
+        list-style: none;
+    }
+    li a {
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 8px 14px;
+    }
+    li a:hover {
+        font-weight: 600;
+        color: red;
+        text-decoration: none;
+        list-style: none;
+        border-radius: 5px;
+        background-color: rgba(255,255,255,0.3);
+    }
+    .juridica{
+        cursor: pointer;
+        width: 220px;
+        position: absolute;
+        justify-content: center;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        background-color: green;
+        opacity: 0.8;
+        color: #FFFFFF;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 550px;
+    }
+    .btn-primary:hover{
+        font-weight: 600;
+        background-color: green;
+        color: #FFFFFF;
+    }
+    form{
+        margin: 20px auto;
+        width: 70%;
+        height: 530px;
+        padding: 1em 1.5em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+    form input{
+        margin-top: 0.1em;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /*#cliente_fornecedor{
+        margin-top: 0;
+        width: 350px;
+    }
+    #ano{
+        width: 60px;
+        text-align: right;
+        margin-left: 10px;
+    }
+    #placa{
+        text-align: right;
+        width: 80px;
+        margin-left: 10px;
+    }
+    #modelo, #montadora{
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    #nome, #razaosocial{
+        margin-bottom: 10px;
+        width: 150px;
+    }
+    #nomefantasia, #contato{
+        margin-bottom: 10px;
+        width: 276px;
+    }
+    #cnpj{
+        width: 140px;
+        text-align: right;
+    }
+    #atividade, #segmento{
+        width: 110px;
+        text-align: right;
+    }
+    #endereco {
+        margin-bottom: 10px;
+        width: 420px;
+    }
+    #profissao, #sobrenome,
+     #email,#site_fornecedor {
+        margin-bottom: 10px;
+        width: 276px;
+    }
+    #observacao{
+        height: 50px;
+        width: 350px;
+        margin-top: 10px;
+        padding-left: 5px;
+        border-radius: 5px;
+    }
+    #cpf{
+        text-align: right;
+        width: 115px;
+    }
+    #datanascimento{
+        width: 118px;
+    }
+    #cidade{
+        margin-bottom: 10px;
+        width: 136px;
+    }    
+    #uf{
+        width: 40px;
+    }
+    #estado{
+        width: 140px;
+    }
+    #cep{
+        margin-bottom: 10px;
+        width: 90px;
+    }
+    #telefone{
+        width: 115px;
+    }
+    #celular{
+        width: 115px;
+    }
+    #pesquisa_cf{
+        width: 300px;
+        margin-bottom: 10px;
+    }*/
+}

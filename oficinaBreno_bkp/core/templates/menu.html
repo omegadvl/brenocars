@@ -1,0 +1,64 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% bootstrap_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_768.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_384.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_tablet.css' %}">
+    <title>Sistema Gerenciamento Recursos - Brenno Car</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-principal">
+                <nav>
+                    <ul>
+                        <li><a href="#">OS-Serviço</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="{% url 'fisica' %}">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">OS-Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="razaosocial">
+                <span class="razaosocial_nome">Brenno Car - Auto Elétrica</span>
+            </div>
+            <div class="logo-injecao-eletronica">
+                <img alt="Logotipo injeção eletrônica"
+                     src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
+            </div>    
+            <div class="logado">
+                {% block content %}
+                    {% load static %}
+                      <p>LOGOUT!</p>
+                      <a href="{% url 'login' %}">Sair</a>
+                {% endblock %}
+                <span>Bem vindo - <small>{{ user.get_full_name }}</small></span>
+            </div>
+            <div class="nomempresa"></div>
+        </div>  
+    </header>
+    <main>
+    </main>
+    <footer>
+
+    </footer>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

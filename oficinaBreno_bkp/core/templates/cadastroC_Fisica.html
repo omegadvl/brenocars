@@ -1,0 +1,99 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% bootstrap_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_768.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_384.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_tablet.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
+        integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE="
+        crossorigin="anonymous" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"
+            integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k="
+            crossorigin="anonymous"></script>
+    <title>Cadastro - Clientes Física</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-principal">
+                <nav>
+                    <ul>
+                        <li><a href="#">OS-Serviço</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="{% url 'fornecedor' %}">Fornecedores</a></li>
+                        <li><a href="{% url 'veiculos' %}">Veículos</a></li>
+                        <li><a href="{% url 'menu' %}">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">OS-Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="razaosocial">
+                <span class="razaosocial_nome">Brenno Car - Auto Elétrica</span>
+            </div>
+            <div class="logado">
+                {% block content %}
+                    {% load static %}
+                    <p>LOGOUT!</p>
+                    <a href="{% url 'login' %}">Sair</a>
+                {% endblock %}
+                <span>Bem vindo - <small>{{ user.get_full_name }}</small></span>
+            </div>
+            <div class="nomempresa">
+            </div> 
+            <div class="logo-injecao-eletronica">
+                <img alt="Logotipo injeção eletrônica"
+                    src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
+            </div>
+            
+        </div>  
+    </header>
+    <main>
+
+        <a href="{% url 'juridica' %}"><button class="juridica" type="button">Selecione para Jurídica</button></a>
+        <span class="clientes">Clientes - Física</span>
+        <form action="{% url 'fisica' %}" method="post" class="form-inline" autocomplete="off">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% bootstrap_messages %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary" >CADASTRAR</button>
+            {% endbuttons %}
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    {% bootstrap_javascript jquery='full' %}
+    {% block scripts %}
+        <script src="{% static 'js/BrennoCar/mascara.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/cep_scripts.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/email_scripts.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/jquery.mask.js' %}"></script>
+    {% endblock %}
+</body>
+
+</html>
