@@ -112,7 +112,7 @@
     .logo-injecao-eletronica img{
         position: absolute;
         margin-top: -60px;
-        margin-left: 140px;
+        margin-left: 200px;
         width: 65px;
     }
     .clientes, .fornecedores,
@@ -162,7 +162,6 @@
     .dropdown{
         margin-left: 30px;
     }
-
     ul.dropdown-menu{
         margin-left: 30px;
     }
@@ -170,21 +169,19 @@
         color: red;
     }
     span{
-        width: 300px;
+        font-size: 14px;
+        width: 200px;
         color: #FFFFFF;
-        margin-top: -70px;
-        margin-right: 100px;
+        margin-top: -100px;
     }
-
     small{
+        font-size: 14px;
         color: yellow;
     }
-
     li {
         color: #FFFFFF;
         text-align: center;
     }
-
     li a:hover {
         font-weight: 600;
         color: red;
@@ -193,7 +190,6 @@
         border-radius: 5px;
         background-color: rgba(255,255,255,0.3);
     }
-
     #cadastroDropdown,
     #consultaDropdown{
         font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
@@ -205,61 +201,106 @@
     #consultaDropdown:hover{
         color: red;
     }
+    #id_cpf{
+        margin-right: 50px;
+        width: 140px;
+        text-align: right;
+    }
+    #id_nome,
+    #id_estado{
+        margin-right: 50px;
+    }
+    #id_cidade {
+        margin-right: 50px;
+        width: 200px;
+    }
+    #id_nascimento{
+        margin-right: 50px;
+        width: 140px;
+    }
 
+    #id_sobrenome, #id_profissao,
+    #id_endereco, #id_bairro,
+    #id_email, #id_site,
+    #id_contato, #id_razaosocial,
+    #id_nomefantasia{
+        margin-right: 70px;
+        width: 310px;
+    }
+    #id_Telefone, #id_Celular,
+    #id_Cep{
+        margin-right: 50px;
+        width: 140px;
+    }
+
+    #id_uf {
+        margin-right: 50px;
+        width: 120px;
+    }
+
+    #id_montadora, #id_modelo,
+    #id_ano, #id_placa{
+        margin-right: 50px;
+        width: 140px;
+    }
+
+    #id_mensagem {
+        margin-right: 50px;
+        width: 350px;
+        height: 80px;
+    }
     .navbar-brand{
         margin-top: -70px;
         position: absolute;
-        margin-left: 246px;
+        margin-left: 300px;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 500;
         font-size: 20px;
     }
-
     .navbar-expand-lg .navbar-nav .nav-link{
         text-align: center;
         width:162px;
     }
-
     .navbar-nav{
         width: 150px;
         justify-item: center;
         margin-left: 380px;
 
     }
-
     .navbar-expand-lg{
         border-radius: 0 0 30px 30px;
         height: 92px;
     }
-
     .navbar-expand-lg .navbar-collapse{
         margin-top: 0;
         margin-left: 0px;
         justify-content: center;
     }
-
     h2{
-        margin-top: -50px;
+        font-size: 18px;
+        margin-top: -30px;
         margin-left: 240px;
         position: absolute;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: #FFFFFF;
     }
-
     .menslogin{
-        justify-content: center;
+        text-align: center;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: yellow;
         font-size: 16px;
     }
-
+    ul li{
+        list-style: none;
+        font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: yellow;
+    }
     .container-fluid{
         justify-item: center;
         margin-top: 50px;
     }
-
-    .logout{
-        margin-right: 100px;
+    a.logout{
+        margin-right: 1vh;
         text-decoration: none;
         color: red;
     }
@@ -291,9 +332,9 @@
         color: #FFFFFF;
     }
     form{
-        margin: 60px auto;
+        margin: 80px auto;
         width: 72%;
-        height: 520px;
+        height: 620px;
         padding: 1em 1.5em;
         border: 1px solid #CCC;
         border-radius: 1em;
