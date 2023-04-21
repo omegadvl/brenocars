@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Criar um novo cliente</h2>
+  <h2>Cadastrar Cliente</h2>
   <form method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form }}
     <button type="submit">Salvar</button>
   </form>
 {% endblock %}

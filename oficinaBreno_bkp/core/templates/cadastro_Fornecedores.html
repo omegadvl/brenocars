@@ -1,0 +1,85 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% bootstrap_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_768.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_384.css' %}">
+    <link rel="stylesheet" href="{% static '_css/BrennoCar/style_tablet.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <title>Cadastro - Fornecedores</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-principal">
+                <nav>
+                    <ul>
+                        <li><a href="#">OS-Serviço</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="{% url 'veiculos' %}">Veículos</a></li>
+                        <li><a href="{% url 'fisica' %}">Clientes</a></li>
+                        <li><a href="{% url 'menu' %}">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Consulta</a></li>
+                        <li><a href="#">Excluir</a></li>
+                        <li><a href="#">OS-Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="razaosocial">
+                <span class="razaosocial_nome">Brenno Car - Auto Elétrica</span>
+            </div>
+            <div class="logado">
+                {% block content %}
+                    {% load static %}
+                      <p>LOGOUT!</p>
+                      <a href="{% url 'login' %}">Sair</a>
+                {% endblock %}
+                <span>Bem vindo - <small>{{ user.get_full_name }}</small></span>
+            </div>
+            <div class="nomempresa">
+            </div> 
+            <div class="logo-injecao-eletronica">
+                <img src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}" alt="">
+            </div>
+            
+        </div>  
+    </header>
+    <main>
+        <span class="fornecedores">Fornecedores</span>
+        <form action="{% url 'fornecedor' %}" method="post" class="form-inline" autocomplete="off">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% bootstrap_messages %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary" >CADASTRAR</button>
+            {% endbuttons %}
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    {% bootstrap_javascript jquery='full' %}
+    {% block scripts %}
+        <script src="{% static 'js/BrennoCar/mascara.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/cep_scripts.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/email_scripts.js' %}"></script>
+        <script src="{% static 'js/BrennoCar/jquery.mask.js' %}"></script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,62 @@
+@media screen and (min-width: 280px) and
+    (max-width: 768px) {
+    .menu-principal {
+        display: block;
+    }
+    nav ul li a,
+    .nomempresa,.logado,
+    .logo-injecao-eletronica{
+        display: none;
+    }
+    .razaosocial_nome{
+        display: none;
+    }
+    .juridica{
+        margin-left: 40px;
+        margin-left: 10px;
+    }
+    #nome, #sobrenome, #endereco,
+    #email, #profissao, #contato{
+        width: 160px;
+    }
+    #razaosocial,#nomefantasia{
+        width: 160px;
+    }
+    #cep, #estado, #cidade,
+    #atividade, #cnpj{
+        margin-left: 0;
+        width: 100px;
+    }
+    #celular,{
+        width: 100px;
+
+    }
+    #datanascimento, #cpf{
+        margin-left: 0px;
+        width: 80px;
+    }
+    #uf{
+        margin-left: 0;
+        width: 50px;
+    }
+    .login{
+        margin-top: 400px;
+    }
+    .clientes, .fornecedores,
+    .veiculos{
+        margin-left: -50px;
+    }
+    .celular {
+        margin-left: 10px;
+    }
+    #observacao{
+        height: 80px;
+        width: 236px;
+    }
+    .cadastro{
+        justify-content: center;
+        display: flex;
+        margin-left: 320px;
+        margin-top: -30px;
+    }
+}

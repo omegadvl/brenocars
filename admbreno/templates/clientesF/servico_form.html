@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-
 {% block content %}
-  <h1>Cadastrar serviço</h1>
+  <h2>Cadastrar serviço</h2>
   <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form }}
 
     <button type="submit" class="btn btn-primary">Salvar</button>
     <a href="{% url 'lista_clientes' %}" class="btn btn-secondary">Cancelar</a>

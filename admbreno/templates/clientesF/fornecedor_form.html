@@ -4,7 +4,7 @@
   <h2>Cadastro de Fornecedor</h2>
   <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form }}
     <button type="submit">Salvar</button>
   </form>
 {% endblock %}
