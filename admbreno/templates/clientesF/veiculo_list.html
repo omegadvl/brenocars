@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
-
 {% block content %}
-
-<h2>Veículos Cadastrados</h2>
+<h2>Consulta Veículos</h2><br>
 
 <table class="table">
   <thead>
     <tr>
       <th>Cliente</th>
-      <th>Marca</th>
+      <!--<th>Marca</th>!-->
       <th>Modelo</th>
       <th>Ano</th>
       <th>Placa</th>
@@ -19,7 +17,7 @@
     {% for veiculo in veiculos %}
     <tr>
       <td>{{ veiculo.cliente.nome }}</td>
-      <td>{{ veiculo.marca }}</td>
+      <!--<td>{{ veiculo.marca }}</td>!-->
       <td>{{ veiculo.modelo }}</td>
       <td>{{ veiculo.ano }}</td>
       <td>{{ veiculo.placa }}</td>

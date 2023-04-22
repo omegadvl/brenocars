@@ -1,26 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Lista de Fornecedores</h1>
+<h2>Consulta Fornecedores</h2><br>
 
   <table class="table">
     <thead>
       <tr>
         <th>Razão Social</th>
         <th>CNPJ</th>
-        <th>Nome Fantasia</th>
-        <th>Segmento</th>
+        <!--<th>Nome Fantasia</th>
+        <th>Segmento</th>!-->
         <th>Contato</th>
         <th>Telefone</th>
-        <th>CEP</th>
         <th>Celular</th>
+        <!--<th>CEP</th>!-->
         <th>Endereço</th>
-        <th>Cidade</th>
-        <th>Estado</th>
-        <th>UF</th>
+        <!--<th>Cidade</th>!-->
+        <!--<th>Estado</th>
+        <th>UF</th>!-->
         <th>E-mail</th>
-        <th>Site</th>
-        <th>Opções</th>
+        <!--<th>Site</th>!-->
+        <!--<th>Opções</th>!-->
       </tr>
     </thead>
     <tbody>
@@ -28,18 +28,18 @@
         <tr>
           <td>{{ fornecedor.razao_social }}</td>
           <td>{{ fornecedor.cnpj }}</td>
-          <td>{{ fornecedor.nome_fantasia }}</td>
-          <td>{{ fornecedor.segmento }}</td>
+          <!--<td>{{ fornecedor.nome_fantasia }}</td>
+          <td>{{ fornecedor.segmento }}</td>!-->
           <td>{{ fornecedor.contato }}</td>
           <td>{{ fornecedor.telefone }}</td>
-          <td>{{ fornecedor.cep }}</td>
           <td>{{ fornecedor.celular }}</td>
+          <!--<td>{{ fornecedor.cep }}</td>!-->
           <td>{{ fornecedor.endereco }}</td>
-          <td>{{ fornecedor.cidade }}</td>
-          <td>{{ fornecedor.estado }}</td>
-          <td>{{ fornecedor.uf }}</td>
+          <!--<td>{{ fornecedor.cidade }}</td>!-->
+          <!--<td>{{ fornecedor.estado }}</td>
+          <td>{{ fornecedor.uf }}</td>!-->
           <td>{{ fornecedor.email }}</td>
-          <td>{{ fornecedor.site }}</td>
+          <!--<td>{{ fornecedor.site }}</td>!-->
           <td>
         <a href="{% url 'fornecedor_edit' fornecedor.pk %}" class="btn btn-warning">Editar</a>
         <form action="{% url 'fornecedor_delete' fornecedor.pk %}" method="POST" style="display: inline-block;">

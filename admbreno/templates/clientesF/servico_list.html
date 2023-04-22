@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
-
 {% block content %}
-  <h2>Serviços</h2>
+  <h2>Consulta Serviços</h2><br>
   <table class="table">
     <thead>
       <tr>
         <th>Cliente</th>
         <th>Veículo</th>
+        <th>Ano</th>
         <th>Descrição</th>
-        <th>Data/Hora</th>
+        <th>Data Cadastro</th>
+        <th>Data Entrega</th>
         <th>Ações</th>
       </tr>
     </thead>
@@ -17,7 +18,9 @@
         <tr>
           <td>{{ servico.veiculo.cliente.nome }}</td>
           <td>{{ servico.veiculo.modelo }} ({{ servico.veiculo.placa }})</td>
+          <td>{{ servico.veiculo.ano }}</td>
           <td>{{ servico.descricao }}</td>
+          <td>{{ servico.data_cadastro}}</td>
           <td>{{ servico.data_entrega}}</td>
           <td>
             <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-sm btn-primary">Editar</a>

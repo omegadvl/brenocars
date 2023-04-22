@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
-    <h2>Lista de clientes</h2>
+    <h2>Consulta Clientes</h2><br>
     <table class="table">
       <thead>
         <tr>
           <th>Nome</th>
           <th>Sobrenome</th>
+          <th>Endereço</th>
+          <th>Celular</th>
           <th>E-mail</th>
           <th>Ações</th>
         </tr>
@@ -16,6 +17,8 @@
           <tr>
             <td>{{ cliente.nome }}</td>
             <td>{{ cliente.sobrenome }}</td>
+            <td>{{ cliente.endereco }}</td>
+            <td>{{ cliente.celular }}</td>
             <td>{{ cliente.email }}</td>
             <td>
               <a href="{% url 'editar_cliente' cliente.pk %}" class="btn btn-warning">Editar</a>
