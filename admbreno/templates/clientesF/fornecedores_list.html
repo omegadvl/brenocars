@@ -42,7 +42,7 @@
           <!--<td>{{ fornecedor.site }}</td>!-->
           <td>
         <a href="{% url 'fornecedor_edit' fornecedor.pk %}" class="btn btn-warning">Editar</a>
-        <form action="{% url 'fornecedor_delete' fornecedor.pk %}" method="POST" style="display: inline-block;">
+        <form action="{% url 'fornecedor_delete' fornecedor.pk %}" method="POST" >
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este fornecedor?')">Excluir</button>
           </form>
@@ -51,7 +51,7 @@
       {% endfor %}
     </tbody>
   </table>
-<a href="{% url 'cadastrar_fornecedor' %}" class="btn btn-primary">Cadastrar fornecedor</a>
+<a href="{% url 'cadastrar_fornecedor' %}" class="btn btn-primary">Cadastrar Fornecedor</a>
 
  
 {% endblock %}

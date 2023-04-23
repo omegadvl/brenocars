@@ -23,8 +23,8 @@
           <td>{{ servico.data_cadastro}}</td>
           <td>{{ servico.data_entrega}}</td>
           <td>
-            <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-sm btn-primary">Editar</a>
-            <form action="{% url 'exclui_servico' servico.pk %}" method="POST" style="display: inline-block;">
+            <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-warning">Editar</a>
+            <form action="{% url 'exclui_servico' servico.pk %}" method="POST">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
           </form>

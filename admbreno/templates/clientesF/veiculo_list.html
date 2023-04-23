@@ -24,7 +24,7 @@
       <td>
         <a href="{% url 'cadastro_servico' veiculo.id %}" class="btn btn-primary">Cadastrar Serviço</a>
         <a href="{% url 'edita_veiculo' veiculo.pk %}" class="btn btn-warning">Editar</a>
-        <form action="{% url 'exclui_veiculo' veiculo.pk %}" method="POST" style="display: inline-block;">
+        <form action="{% url 'exclui_veiculo' veiculo.pk %}" method="POST">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este veiculo?')">Excluir</button>
           </form>
@@ -34,6 +34,6 @@
   </tbody>
 </table>
 
-<a href="{% url 'cadastro_veiculo' %}" class="btn btn-primary">Cadastrar Novo Veículo</a>
+<a href="{% url 'cadastro_veiculo' %}" class="btn btn-primary">Cadastrar Veículo</a>
 
 {% endblock %}
