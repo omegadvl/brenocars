@@ -5,6 +5,7 @@
     }
 
    .navbar-brand{
+        margin-left: 100px;
         margin-top: -50px;
     }
 
@@ -24,7 +25,7 @@
     .logo-injecao-eletronica img{
         position: absolute;
         margin-top: -60px;
-        margin-left: 140px;
+        margin-left: 20px;
         width: 65px;
     }
     .razaosocial_nome{

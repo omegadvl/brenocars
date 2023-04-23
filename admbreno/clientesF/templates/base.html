@@ -1,5 +1,6 @@
 {% load bootstrap4 %}
 {% load static %}
+{% load tempo_atual %}
 <html lang="pt-br">
   <head>
     {% bootstrap_css %}
@@ -74,8 +75,9 @@
             </li>
           </ul>
           <span>Bem vindo - <small>{{user.get_username}}</small></span>
+          <span class="hora">Hora: <small>&nbsp; {% tempo_atual %}</small> </span>
         </div>
-          <a class="logout" href="{% url 'logout' %}">Log-out</a>
+          <span><a class="logout" href="{% url 'logout' %}">Log-out</a></span>
       </div>
     </nav>
 

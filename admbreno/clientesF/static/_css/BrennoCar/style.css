@@ -23,7 +23,7 @@
     .logo-injecao-eletronica img{
         position: absolute;
         margin-top: -60px;
-        margin-left: 180px;
+        margin-left: 100px;
         width: 65px;
     }
     .dropdown{
@@ -40,7 +40,9 @@
         width: 200px;
         color: #FFFFFF;
         margin-top: -100px;
-        margin-left: 220px;
+    }
+    span.hora{
+        float: right;
     }
     small{
         color: #98FB98;
@@ -151,20 +153,24 @@
         width: 350px;
         height: 80px;
     }
+    b{
+        font-size: 14px;
+        color: #FFFFFF;
+    }
     .navbar-brand{
         color: #FF6347;
-        margin-top: -30px;
+        margin-top: -80px;
         position: absolute;
-        margin-left: 280px;
+        margin-left: 180px;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         font-size: 22px;
     }
     .navbar-expand-lg .navbar-nav .nav-link{
         text-align: center;
-        width:162px;
+        width:142px;
     }
     .navbar-nav{
-        width: 150px;
+        width: 200px;
         justify-item: center;
         margin-left: 380px;
     }
@@ -180,7 +186,7 @@
     h2{
         font-size: 24px;
         margin-top: -40px;
-        margin-left: 250px;
+        margin-left: 280px;
         position: absolute;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: #FF6347;
@@ -201,7 +207,6 @@
         margin-top: 50px;
     }
     a.logout{
-        margin-right: 1vh;
         text-decoration: none;
         color: #FF6347;
     }
