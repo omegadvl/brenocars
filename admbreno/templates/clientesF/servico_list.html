@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Consulta Serviços</h2><br><br>
+  <h2>Consulta Serviços</h2><br>
   <table class="table">
     <thead>
       <tr>
-        <th>Cliente</th>
-        <th>Veículo</th>
-        <th>Ano</th>
-        <th>Descrição</th>
-        <th>Data Cadastro</th>
-        <th>Data Entrega</th>
-        <th>Ações</th>
+        <th class="consulta">Cliente</th>
+        <th class="consulta">Veículo</th>
+        <th class="consulta">Ano</th>
+        <th class="consulta">Descrição</th>
+        <th class="consulta">Data Cadastro</th>
+        <th class="consulta">Data Entrega</th>
+        <th class="consulta">Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -24,10 +24,10 @@
           <td>{{ servico.data_entrega}}</td>
           <td>
             <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-warning">Editar</a>
-            <form action="{% url 'exclui_servico' servico.pk %}" method="POST">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
-          </form>
+            <form class="consulta" action="{% url 'exclui_servico' servico.pk %}" method="POST">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
+            </form>
           </td>
         </tr>
       {% empty %}

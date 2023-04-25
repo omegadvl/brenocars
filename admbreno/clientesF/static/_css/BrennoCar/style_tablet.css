@@ -4,16 +4,25 @@
         display: none;
     }
 
-   .navbar-brand{
-        margin-left: 100px;
-        margin-top: -50px;
+    tbody{
+        width: 100%;
+        font-size: 13px;
+        color: #FFFFFF;
     }
 
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
+   .navbar-brand{
+        margin-left: 170px;
+        margin-top: -40px;
     }
+
+    .navbar.container-fluid{
+        display: block;
+    }
+
+    .container-fluid{
+        margin-top: 50px;
+    }
+
     li a {
         font-weight: 400;
         font-size: 13px;
@@ -25,7 +34,8 @@
     .logo-injecao-eletronica img{
         position: absolute;
         margin-top: -60px;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
+        float: right;
         width: 65px;
     }
     .razaosocial_nome{
@@ -37,18 +47,5 @@
         width: 250px;
         margin-left: 14vh;
         font-size: 16px;
-    }
-    form{
-        width: 85%;
-        padding: 1em 1.5em;
-    }
-    form input{
-        margin-top: 0.1em;
-    }
-
-    .juridica{
-        font-size: 14px;
-        margin-left: 400px;
-        margin-top: -8px;
     }
 }

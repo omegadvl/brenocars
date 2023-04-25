@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>Consulta Clientes</h2><br><br>
+    <h2>Consulta Clientes</h2><br>
     <table class="table">
       <thead>
         <tr>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>Endereço</th>
-          <th>Celular</th>
-          <th>E-mail</th>
-          <th>Ações</th>
+          <th class="consulta">Nome</th>
+          <th class="consulta">Sobrenome</th>
+          <th class="consulta">Endereço</th>
+          <th class="consulta">Celular</th>
+          <th class="consulta">E-mail</th>
+          <th class="consulta">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -22,7 +22,7 @@
             <td>{{ cliente.email }}</td>
             <td>
               <a href="{% url 'editar_cliente' cliente.pk %}" class="btn btn-warning">Editar</a>
-          <form action="{% url 'excluir_cliente' cliente.pk %}" method="POST">
+          <form class="consulta" action="{% url 'excluir_cliente' cliente.pk %}" method="POST">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</button>
           </form>

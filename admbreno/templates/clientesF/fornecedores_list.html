@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Consulta Fornecedores</h2><br><br>
+<h2>Consulta Fornecedores</h2><br>
 
   <table class="table">
     <thead>
       <tr>
-        <th>Razão Social</th>
-        <th>CNPJ</th>
+        <th class="consulta">Razão Social</th>
+        <th class="consulta">CNPJ</th>
         <!--<th>Nome Fantasia</th>
         <th>Segmento</th>!-->
-        <th>Contato</th>
-        <th>Telefone</th>
-        <th>Celular</th>
+        <th class="consulta">Contato</th>
+        <th class="consulta">Telefone</th>
+        <th class="consulta">Celular</th>
         <!--<th>CEP</th>!-->
-        <th>Endereço</th>
+        <th class="consulta">Endereço</th>
         <!--<th>Cidade</th>!-->
         <!--<th>Estado</th>
         <th>UF</th>!-->
-        <th>E-mail</th>
+        <th class="consulta">E-mail</th>
         <!--<th>Site</th>!-->
         <!--<th>Opções</th>!-->
       </tr>
@@ -42,7 +42,7 @@
           <!--<td>{{ fornecedor.site }}</td>!-->
           <td>
         <a href="{% url 'fornecedor_edit' fornecedor.pk %}" class="btn btn-warning">Editar</a>
-        <form action="{% url 'fornecedor_delete' fornecedor.pk %}" method="POST" >
+        <form class="consulta" action="{% url 'fornecedor_delete' fornecedor.pk %}" method="POST" >
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este fornecedor?')">Excluir</button>
           </form>

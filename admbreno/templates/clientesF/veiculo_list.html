@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Consulta Veículos</h2><br><br>
+<h2>Consulta Veículos</h2><br>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Cliente</th>
+      <th class="consulta">Cliente</th>
       <!--<th>Marca</th>!-->
-      <th>Modelo</th>
-      <th>Ano</th>
-      <th>Placa</th>
-      <th>Opções</th>
+      <th class="consulta">Modelo</th>
+      <th class="consulta">Ano</th>
+      <th class="consulta">Placa</th>
+      <th class="consulta">Opções</th>
     </tr>
   </thead>
   <tbody>
@@ -24,7 +24,7 @@
       <td>
         <a href="{% url 'cadastro_servico' veiculo.id %}" class="btn btn-primary">Cadastrar Serviço</a>
         <a href="{% url 'edita_veiculo' veiculo.pk %}" class="btn btn-warning">Editar</a>
-        <form action="{% url 'exclui_veiculo' veiculo.pk %}" method="POST">
+        <form class="consulta" action="{% url 'exclui_veiculo' veiculo.pk %}" method="POST">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este veiculo?')">Excluir</button>
           </form>

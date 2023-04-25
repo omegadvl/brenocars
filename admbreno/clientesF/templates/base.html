@@ -73,11 +73,14 @@
                 <li><a class="dropdown-item" href="{% url 'fornecedores_list' %}">Fornecedores</a></li>
               </ul>
             </li>
+
           </ul>
-          <span>Bem vindo - <small>{{user.get_username}}</small></span>
-          <span class="hora">Hora: <small>&nbsp; {% tempo_atual %}</small> </span>
+            <span>Bem vindo - <small>{{user.get_username}}</small></span>
+            <span class="hora">Hora: <small>&nbsp; {% tempo_atual %}</small> </span>
+            <span><a class="logout" href="{% url 'logout' %}">LOGOUT</a></span>
         </div>
-          <span><a class="logout" href="{% url 'logout' %}">Log-out</a></span>
+
+
       </div>
     </nav>
 
