@@ -12,16 +12,14 @@
     body{
         background-repeat: no-repeat;
         background-image: url(../../_images/BrennoCar/Car_Headlights_resize.jpg);
-        background-position: 50% 30px;
+        background-position: 50% 40px;
         background-size: contain;
         background-color: #090907;
-        opacity: 90%;
     }
     .bg-dark{
         height: 80px;
-        background-color: #CD5C5C!important;
+        /*background-color: #CD5C5C!important;*/
     }
-
     .logo-injecao-eletronica img{
         position: absolute;
         margin-top: -60px;
@@ -41,15 +39,16 @@
         color: red;
     }
     span{
-        width: 250px;
-        font-size: 14px;
+        /*display: inline-flex;*/
+        width: 200px;
         color: #FFFFFF;
-        margin-top: -50px;
+        margin-top: -66px;
     }
     span.hora{
-        /*float: right;*/
+        width: 120px;
     }
     small{
+        font-size: 14px;
         color: #f3e97a;
     }
     li {
@@ -61,21 +60,21 @@
         text-decoration: none;
         list-style: none;
         border-radius: 5px;
-        /*background-color: rgba(255,255,255,0.3);*/
+        background-color: rgba(255,255,255,0.3);
     }
-    #id_username{
-        /*display: inline-flex;*/
-        margin-left: -10px;
+    #id_username, #id_password{
+        margin-top: 5px;
+        margin-bottom: 8px;
     }
     p{
         justify-content: center;
-        display: flex;
+        display: inline-grid;
         width: 100%;
         margin-bottom: 0;
-
     }
     label{
-        margin-top: 10px;
+        justify-self: center;
+        margin-bottom: 0;
         margin-right: 16px;
         font-size: 16px;
         font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
@@ -92,12 +91,11 @@
         font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
         padding: 5px 5px;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .login:hover{
         background-color: red;
     }
-
     .submit{
         font-weight: 500;
         letter-spacing: 2px;
@@ -118,49 +116,67 @@
     }
     #cadastroDropdown:hover,
     #consultaDropdown:hover{
-        /*color: red;*/
+        color: yellow;
+    }
+    #id_cnpj{
+        width: 160px;
+        text-align: right;
     }
     #id_cpf{
-        margin-right: 50px;
-        width: 140px;
+        margin-right: 20px;
+        width: 130px;
         text-align: right;
     }
     #id_nome,
     #id_estado{
-        margin-right: 50px;
+        padding-left: 5px;
+        margin-right: 20px;
     }
     #id_cidade {
-        margin-right: 50px;
+        padding-left: 5px;
+        margin-right: 20px;
         width: 200px;
     }
-    #id_nascimento{
-        margin-right: 50px;
+    #id_data_nascimento{
+        padding-left: 5px;
+        margin-right: 20px;
         width: 140px;
+    }
+    #id_atividade, #id_segmento{
+        width: 110px;
+        text-align: right;
     }
     #id_sobrenome, #id_profissao,
     #id_endereco, #id_bairro,
     #id_email, #id_site,
-    #id_contato, #id_razaosocial,
-    #id_nomefantasia{
-        margin-right: 70px;
+    #id_contato, #id_razao_social,
+    #id_nome_fantasia{
+        padding-left: 5px;
+        margin-right: 20px;
         width: 310px;
     }
-    #id_Telefone, #id_Celular,
+    #id_Telefone, #id_Celular{
+        padding-left: 5px;
+        margin-right: 20px;
+        width: 130px;
+    }
     #id_Cep{
-        margin-right: 50px;
-        width: 140px;
+        width: 90px;
     }
     #id_uf {
-        margin-right: 50px;
-        width: 120px;
+        padding-left: 5px;
+        margin-right: 20px;
+        width: 50px;
     }
     #id_montadora, #id_modelo,
     #id_ano, #id_placa{
-        margin-right: 50px;
+        padding-left: 5px;
+        margin-right: 20px;
         width: 140px;
     }
     #id_mensagem {
-        margin-right: 50px;
+        padding-left: 5px;
+        margin-right: 20px;
         width: 350px;
         height: 80px;
     }
@@ -172,7 +188,7 @@
         color: #FF6347;
         margin-top: -70px;
         position: absolute;
-        margin-left: 180px;
+        margin-left: 160px;
         font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
     }
@@ -181,7 +197,7 @@
         width:142px;
     }
     .navbar-nav{
-        margin-left: 490px;
+        margin-left: 380px;
     }
     .navbar-expand-lg{
         border-radius: 0 0 20px 20px;
@@ -214,23 +230,21 @@
         list-style: none;
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: yellow;
-        /*margin-bottom: 50px;*/
     }
     .navbar.container-fluid{
         display: block;
     }
-
     .container-fluid{
         margin-top: 50px;
     }
     a.logout{
+        position: relative;
         text-decoration: none;
         color: yellow;
     }
     .logout:hover{
         text-transform: uppercase;
         color: #98FB98;
-
     }
     .table thead th{
         width: 180px;
@@ -245,7 +259,6 @@
         font-size: 13px;
         color: yellow;
     }
-
     .btn.btn-primary{
         font-size: 14px;
         margin-top: -8px;
@@ -275,18 +288,19 @@
         padding: 5px 5px;
         border-radius: 5px;
         width: 170px;
+        margin-top: 10px;
     }
     .Save:hover{
         background-color: red;
         color: #FFFFFF;
     }
     form{
-        padding: 20px 20px;
+        padding: 40px 40px;
         border-radius: 10px;
         border: 1px solid #FFFFFF;
         margin-left: 20%;
         width: 60%;
-        height: 440px;
+        height: 500px;
     }
     form.consulta{
         padding: 0;
@@ -295,72 +309,9 @@
         height: 0;
     }
     form input{
-        margin-top: .5em;
+        margin-top: .4em;
         border-radius: 5px;
         padding: 2px;
-    }
-    #id_cliente_fornecedor{
-        margin-top: 0;
-        width: 350px;
-    }
-    #id_ano{
-        width: 60px;
-        text-align: right;
-        margin-left: 10px;
-    }
-    #id_placa{
-        text-align: right;
-        width: 80px;
-        margin-left: 10px;
-    }
-    #id_modelo, #id_montadora{
-        width: 200px;
-    }
-    #id_nome, #id_razao_social,
-    #id_nome_fantasia, #id_contato,
-    #id_profissao, #id_sobrenome,
-    #id_email,#id_site_fornecedor{
-        width: 280px;
-    }
-    #id_cnpj{
-        width: 160px;
-        text-align: right;
-    }
-    #id_atividade, #id_segmento{
-        width: 110px;
-        text-align: right;
-    }
-    #id_endereco {
-        width: 420px;
-    }
-    #id_observacao{
-        height: 50px;
-        width: 350px;
-        margin-top: 10px;
-        padding-left: 5px;
-        border-radius: 5px;
-    }
-    #i_cpf{
-        text-align: right;
-        width: 115px;
-    }
-    #id_data_nascimento{
-        width: 120px;
-    }
-    #id_uf{
-        width: 40px;
-    }
-    #id_cidade, #id_estado{
-        width: 140px;
-    }
-    #id_cep{
-        width: 90px;
-    }
-    #id_telefone{
-        width: 125px;
-    }
-    #id_celular{
-        width: 135px;
     }
     #id_pesquisa_cf{
         width: 300px;

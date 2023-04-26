@@ -1,6 +1,7 @@
 {% load bootstrap4 %}
 {% load static %}
 {% load tempo_atual %}
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     {% bootstrap_css %}
@@ -11,33 +12,29 @@
     <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_768.css' %}">
     <link rel="stylesheet" href="{% static '_css/BrennoCar/style_mobile_384.css' %}">
     <link rel="stylesheet" href="{% static '_css/BrennoCar/style_tablet.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">!-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>!-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-
-    <script>
+    <!--<script>
       $(document).ready(function() {
         $('#data_nascimento').addClass('datepicker');
         $('.datepicker').datepicker();
       });
     </script>
-
     <script>
       // inicialize o datepicker para todos os campos com a classe "datepicker"
       $(document).ready(function() {
         $('.datepicker').datepicker({
-          format: 'yyyy-mm-dd',
+          format: 'dd-mm-yyyy',
           autoclose: true,
           todayHighlight: true,
         });
       });
-    </script>
-
+    </script>!-->
       {% block css %}{% endblock %}
   </head>
-
   <body>
     <!-- Barra de navegação do Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,7 +42,7 @@
         <a class="navbar-brand" href="{% url 'index' %}">Brenno Cars - Auto Elétrica</a>
           <div class="logo-injecao-eletronica">
             <img alt="Logotipo injeção eletrônica"
-                 src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
+                src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
           </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -75,33 +72,26 @@
             </li>
 
           </ul>
-            <span>Bem vindo - <small>{{user.get_username}}</small></span>
-            <span class="hora">Hora: <small>&nbsp; {% tempo_atual %}</small> </span>
+            <span>Bem vindo:&nbsp;&nbsp;<small>{{user.get_username}}</small></span>
+            <span class="hora">Hora:<small>&nbsp;&nbsp;{% tempo_atual %}</small> </span>
             <span><a class="logout" href="{% url 'logout' %}">LOGOUT</a></span>
         </div>
-
-
       </div>
     </nav>
-
     <div class="container-fluid"><br>
       {% block content %}{% endblock %}
-
     </div>
-
     <!-- Links para os arquivos JS do Bootstrap -->
     <script src="{% static 'js/BrennoCar/mascara.js' %}"></script>
     <script src="{% static 'js/BrennoCar/cep_scripts.js' %}"></script>
     <script src="{% static 'js/BrennoCar/email_scripts.js' %}"></script>
     <script src="{% static 'js/BrennoCar/jquery.mask.js' %}"></script>
-
-    <script>
+    <!--<script>
       $(document).ready(function() {
         $('#id_data_nascimento').addClass('datepicker');
         $('.datepicker').datepicker();
       });
-    </script>
-
+    </script>!-->
         {% block javascript %}{% endblock %}
   </body>
 </html>

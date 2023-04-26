@@ -17,6 +17,7 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return render(request, '../templates/clientesF/index.html')
 
+
 #Criar clientes
 @login_required
 def criar_cliente(request):

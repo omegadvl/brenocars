@@ -1,8 +1,8 @@
 @media screen and
     (max-width: 992px) {
-    #navbarNav{
+    /*#navbarNav{
         display: none;
-    }
+    }*/
 
     tbody{
         width: 100%;
@@ -21,6 +21,20 @@
 
     .container-fluid{
         margin-top: 50px;
+    }
+
+    span{
+        margin-left: -100px;
+        width: 260px;
+        color: #FFFFFF;
+        margin-top: -66px;
+    }
+    span.hora{
+        width: 120px;
+    }
+    small{
+        font-size: 14px;
+        color: #f3e97a;
     }
 
     li a {
