@@ -87,10 +87,9 @@
         font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
         color: yellow;
     }
-    .login{
-        display: flex;
-        width: 100%;
-        justify-content: center;
+    button.login{
+        display: inline-grid;
+        width: 180px;
         font-weight: 500;
         letter-spacing: 4px;
         background-color: #FF6347;
@@ -234,6 +233,7 @@
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: yellow;
         font-size: 16px;
+        margin-top: 220px;
     }
     ul li{
         font-size: 13px;
@@ -261,6 +261,11 @@
         border-bottom: 0;
         border-top: 0;
     }
+    .table td{
+        padding: 0.5rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
     tbody{
         font-size: 13px;
         color: #FFFFFF;
@@ -283,13 +288,12 @@
     }
     .btn.btn-warning{
         font-size: 14px;
-        margin-top: -8px;
         padding: 5px 10px;
         position: absolute;
     }
     .btn.btn-danger{
         font-size: 14px;
-        margin-top: -8px;
+        margin-top: -102px;
         padding: 5px 10px;
         position: relative;
         margin-left: 71px;
@@ -310,6 +314,7 @@
         color: #FFFFFF;
     }
     form{
+        margin-top: 48px;
         padding: 40px 40px;
         border-radius: 10px;
         border: 2px solid #FF6347;
@@ -318,7 +323,7 @@
         height: 460px;
     }
     form.consulta{
-        padding: 0;
+        padding: 8px;
         margin-left: 0;
         border: 0;
         height: 0;

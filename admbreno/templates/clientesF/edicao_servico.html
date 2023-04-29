@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Editar Serviço #{{ servico.id }}</h2><br><br>
+  <h2>Editar Serviço #{{ servico.id }}</h2>
   <form method="post">
     {% csrf_token %}
     {{ form }}
