@@ -92,14 +92,11 @@
         width: 180px;
         font-weight: 500;
         letter-spacing: 4px;
-        background-color: #FF6347;
+        background-color: red;
         color: #FFFFFF;
         font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
         padding: 5px 5px;
         border-radius: 5px;
-    }
-    .login:hover{
-        background-color: red;
     }
     .submit{
         font-weight: 500;
@@ -207,7 +204,7 @@
         width:142px;
     }
     .navbar-nav{
-        margin-left: 380px;
+        margin-left: 300px;
     }
     .navbar-expand-lg{
         border-radius: 0 0 20px 20px;
@@ -248,21 +245,42 @@
         margin-top: 50px;
     }
     a.logout{
-        position: relative;
+        font-size: 13px;
+        font-weight: 300;
         text-decoration: none;
-        color: yellow;
+        color: red;
     }
     .logout:hover{
-        text-transform: uppercase;
         color: #98FB98;
     }
     .table thead th{
-        width: 180px;
+        padding: 5px 5px;
         border-bottom: 0;
         border-top: 0;
     }
+    th.consulta_endereco{
+        width: 288px;
+    }
+    th.consulta_sobrenome{
+        width: 180px;
+    }
+    
+    th.consulta_celular,
+    th.consulta_telefone{
+        width: 150px;
+    }
+    th.consulta, 
+    th.consulta_endereco,
+    th.consulta_sobrenome, 
+    th.consulta_acoes,
+    th.consulta_celular,
+    th.consulta_telefone{
+        font-weight: 400;
+        font-size: 13px;
+        color: yellow;
+    }
     .table td{
-        padding: 0.5rem;
+        padding: 0.3rem;
         vertical-align: top;
         border-top: 1px solid #dee2e6;
     }
@@ -270,16 +288,11 @@
         font-size: 13px;
         color: #FFFFFF;
     }
-    th.consulta{
-        font-size: 13px;
-        color: yellow;
-    }
     .btn.btn-primary{
         font-size: 14px;
-        margin-top: -8px;
-        padding: 5px 10px;
+        padding: 5px 6px;
         position: absolute;
-        margin-left: 146px;
+        margin-left: 64px;
     }
     .btn-primary:hover{
         font-weight: 600;
@@ -287,16 +300,15 @@
         color: #FFFFFF;
     }
     .btn.btn-warning{
+        margin-left: -64px;
         font-size: 14px;
         padding: 5px 10px;
         position: absolute;
     }
     .btn.btn-danger{
         font-size: 14px;
-        margin-top: -102px;
-        padding: 5px 10px;
-        position: relative;
-        margin-left: 71px;
+        margin-top: -86px;
+        padding: 5px 8px;
     }
     .Save{
         font-weight: 500;
@@ -323,7 +335,8 @@
         height: 460px;
     }
     form.consulta{
-        padding: 8px;
+        width: 57px;
+        padding: 0px;
         margin-left: 0;
         border: 0;
         height: 0;
