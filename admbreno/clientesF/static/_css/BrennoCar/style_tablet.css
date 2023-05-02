@@ -1,5 +1,5 @@
 @media screen and
-    (max-width: 992px) {
+    (max-width: 1024px) {
     /*#navbarNav{
         display: none;
     }*/
@@ -11,21 +11,21 @@
     }
 
    .navbar-brand{
-        margin-left: 170px;
-        margin-top: -40px;
+        margin-left: 90px;
+        margin-top: -80px;
     }
 
     .navbar.container-fluid{
         display: block;
     }
 
-    .container-fluid{
+/*    .container-fluid{
         margin-top: 50px;
-    }
+    }*/
 
     span{
-        margin-left: -100px;
-        width: 260px;
+        margin-left: -150px;
+        width: 280px;
         color: #FFFFFF;
         margin-top: -66px;
     }
@@ -46,20 +46,29 @@
         margin-bottom: 5px;
     }
     .logo-injecao-eletronica img{
+        margin-left: 10px;
         position: absolute;
-        margin-top: -65px;
-        /*margin-left: 20px;*/
+        margin-top: -55px;
         float: right;
-        width: 65px;
+        width: 55px;
     }
     .razaosocial_nome{
-        margin-left: 80px;
+        margin-left: 50px;
         font-size: 16px;
     }
     .clientes, .fornecedores,
     .veiculos{
         width: 250px;
-        margin-left: 14vh;
+        margin-left: 10vh;
         font-size: 16px;
+    }
+
+    h2{
+        font-size: 18px;
+        margin-left: 100px;
+        position: absolute;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        /*color: #FF6347;*/
     }
 }

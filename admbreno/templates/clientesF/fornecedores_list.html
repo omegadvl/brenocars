@@ -6,12 +6,14 @@
   <table class="table">
     <thead>
       <tr>
-        <th class="consulta">Razão Social</th>
-        <th class="consulta">CNPJ</th>
+        <th class="consulta_dataCadastro">Cadastro</th>
+        <th class="consulta_hora">Hora</th>
+        <th class="consulta_razaosocial">Razão Social</th>
+        <th class="consulta_cnpj">CNPJ</th>
         <!--<th>Nome Fantasia</th>
         <th>Segmento</th>!-->
         <th class="consulta">Contato</th>
-        <th class="consulta_telefone">Telefone</th>
+        <!--<th class="consulta_telefone">Telefone</th>!-->
         <th class="consulta_celular">Celular</th>
         <!--<th>CEP</th>!-->
         <th class="consulta_endereco">Endereço</th>
@@ -26,12 +28,14 @@
     <tbody>
       {% for fornecedor in fornecedores %}
         <tr>
+          <td>{{ fornecedor.data_cadastro}}</td>
+          <td>{{ fornecedor.hora_cadastro}}</td>
           <td>{{ fornecedor.razao_social }}</td>
           <td>{{ fornecedor.cnpj }}</td>
           <!--<td>{{ fornecedor.nome_fantasia }}</td>
           <td>{{ fornecedor.segmento }}</td>!-->
           <td>{{ fornecedor.contato }}</td>
-          <td>{{ fornecedor.telefone }}</td>
+          <!--<td>{{ fornecedor.telefone }}</td>!-->
           <td>{{ fornecedor.celular }}</td>
           <!--<td>{{ fornecedor.cep }}</td>!-->
           <td>{{ fornecedor.endereco }}</td>

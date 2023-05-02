@@ -4,20 +4,26 @@
     <table class="table">
       <thead>
         <tr>
+          <th class="consulta_dataCadastro">Cadastro</th>
+          <th class="consulta_hora">Hora</th>
           <th class="consulta">Nome</th>
           <th class="consulta_sobrenome">Sobrenome</th>
           <th class="consulta_endereco">Endereço</th>
+          <th class="consulta_telefone">Telefone</th>
           <th class="consulta_celular">Celular</th>
-          <th class="consulta">E-mail</th>
+          <th class="consulta_email">E-mail</th>
           <th class="consulta_acoes">Ações</th>
         </tr>
       </thead>
       <tbody>
         {% for cliente in clientes %}
           <tr>
+            <td>{{ cliente.data_cadastro}}</td>
+            <td>{{ cliente.hora_cadastro}}</td>
             <td>{{ cliente.nome }}</td>
             <td>{{ cliente.sobrenome }}</td>
             <td>{{ cliente.endereco }}</td>
+            <td>{{ cliente.telefone }}</td>
             <td>{{ cliente.celular }}</td>
             <td>{{ cliente.email }}</td>
             <td>

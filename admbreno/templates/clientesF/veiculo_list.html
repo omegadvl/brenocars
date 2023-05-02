@@ -5,19 +5,23 @@
 <table class="table">
   <thead>
     <tr>
+      <th class="consulta_dataCadastro">Cadastro</th>
+      <th class="consulta_hora">Hora</th>
       <th class="consulta">Cliente</th>
-      <!--<th>Marca</th>!-->
-      <th class="consulta">Modelo</th>
-      <th class="consulta">Ano</th>
-      <th class="consulta">Placa</th>
+      <th class="consulta_montadora">Montadora</th>
+      <th class="consulta_modelo">Modelo</th>
+      <th class="consulta_ano">Ano</th>
+      <th class="consulta_placa">Placa</th>
       <th class="consulta_acoes">Ações</th>
     </tr>
   </thead>
   <tbody>
     {% for veiculo in veiculos %}
     <tr>
+      <td>{{ veiculo.data_cadastro}}</td>
+      <td>{{ veiculo.hora_cadastro}}</td>
       <td>{{ veiculo.cliente.nome }}</td>
-      <!--<td>{{ veiculo.marca }}</td>!-->
+      <td>{{ veiculo.marca }}</td>
       <td>{{ veiculo.modelo }}</td>
       <td>{{ veiculo.ano }}</td>
       <td>{{ veiculo.placa }}</td>

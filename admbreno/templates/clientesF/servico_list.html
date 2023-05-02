@@ -4,11 +4,13 @@
   <table class="table">
     <thead>
       <tr>
+        <th class="consulta_dataCadastro">Cadastro</th>
+        <th class="consulta_hora">Hora</th>
         <th class="consulta">Cliente</th>
         <th class="consulta">Veículo</th>
-        <th class="consulta">Ano</th>
+        <th class="consulta_ano">Ano</th>
         <th class="consulta">Descrição</th>
-        <th class="consulta">Data Cadastro</th>
+        <th class="consulta">Valor R$</th>
         <th class="consulta">Data Entrega</th>
         <th class="consulta_acoes">Ações</th>
       </tr>
@@ -16,11 +18,13 @@
     <tbody>
       {% for servico in servicos %}
         <tr>
+          <td>{{ servico.data_cadastro}}</td>
+          <td>{{ servico.hora_cadastro}}</td>
           <td>{{ servico.veiculo.cliente.nome }}</td>
           <td>{{ servico.veiculo.modelo }} ({{ servico.veiculo.placa }})</td>
           <td>{{ servico.veiculo.ano }}</td>
           <td>{{ servico.descricao }}</td>
-          <td>{{ servico.data_cadastro}}</td>
+          <td>{{ servico.valor}}</td>
           <td>{{ servico.data_entrega}}</td>
           <td>
             <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-warning">Editar</a>
