@@ -1,5 +1,5 @@
 @media screen and
-    (max-width: 1024px) {
+    (max-width: 992px) {
     /*#navbarNav{
         display: none;
     }*/
@@ -9,21 +9,32 @@
         font-size: 13px;
         color: #FFFFFF;
     }
-
-   .navbar-brand{
-        margin-left: 90px;
-        margin-top: -80px;
+    /*a.logout{
+        margin-right: 10px;
     }
-
-    .navbar.container-fluid{
-        display: block;
-    }
-
-/*    .container-fluid{
-        margin-top: 50px;
+    .logout:hover{
+        color: #98FB98;
     }*/
 
-    span{
+   /*.navbar-brand{
+        margin-left: 90px;
+        margin-top: -80px;
+    }*/
+    a.logout{
+        display: none;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar.container-fluid{
+        display: inline;
+    }
+
+    .container-fluid{
+        margin-top: 50px;
+    }
+
+    /*span{
         margin-left: -150px;
         width: 280px;
         color: #FFFFFF;
@@ -45,14 +56,17 @@
     #id_username{
         margin-bottom: 5px;
     }
-    .logo-injecao-eletronica img{
+    /*.logo-injecao-eletronica img{
         margin-left: 10px;
         position: absolute;
         margin-top: -55px;
         float: right;
         width: 55px;
+    }*/
+    .logo-injecao-eletronica img{
+        display: none;
     }
-    .razaosocial_nome{
+    /*.razaosocial_nome{
         margin-left: 50px;
         font-size: 16px;
     }
@@ -69,6 +83,7 @@
         position: absolute;
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: #FFFFFF;
-        /*color: #FF6347;*/
-    }
+        /*color: #FF6347;
+    }*/
+    
 }

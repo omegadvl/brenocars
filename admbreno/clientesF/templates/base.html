@@ -39,12 +39,14 @@
   <body>
     <!-- Barra de navegação do Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'index' %}">Brenno Cars - Auto Elétrica</a>
+      <div class="logo-injecao-eletronica">
+        <img alt="Logotipo injeção eletrônica"
+            src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
+      </div>
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'index' %}">Brenno Cars - Auto Elétrica</a>
-          <div class="logo-injecao-eletronica">
-            <img alt="Logotipo injeção eletrônica"
-                src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
-          </div>
+        
+          
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
