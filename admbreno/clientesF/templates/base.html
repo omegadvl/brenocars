@@ -89,14 +89,17 @@
             <!--Fim Menu relatórios-->
 
           </ul>
-            <span>Bem vindo:&nbsp;&nbsp;<small>{{user.get_username}}</small></span>
+          <div id="cab-login">
+            <span class="bem-vindo">Bem vindo:&nbsp;&nbsp;<small>{{user.first_name}} {{user.last_name}}</small></span>
             <span class="hora">Hora:<small>&nbsp;&nbsp;{% tempo_atual %}</small> </span>
-            
-        </div>
-          <div>
-            <span><a class="logout" href="{% url 'logout' %}">Logout</a></span>
           </div>
+        </div>
+
+          <div id="logout">
+            <span><a class="logout" href="{% url 'logout' %}">Logout</a></span>
+          </divc>
       </div>
+
     </nav>
     <div class="container-fluid"><br>
       {% block content %}{% endblock %}

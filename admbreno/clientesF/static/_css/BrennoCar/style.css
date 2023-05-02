@@ -47,13 +47,16 @@
         font-weight: 600;
         color: red;
     }
+    #cab-login{
+        margin-top: -66px;
+    }
     span{
         width: 200px;
         color: #FFFFFF;
         margin-top: -66px;
     }
-    span.hora{
-        width: 220px;
+    span.bem-vindo{
+        margin-right: 80px;
     }
     small{
         font-size: 14px;
@@ -262,7 +265,6 @@
         position: absolute;
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: #FFFFFF;
-        /*color: #FF6347;*/
     }
     p.menslogin{
         width: 100%;
@@ -281,16 +283,12 @@
     .navbar-expand-lg>.container-fluid{
         margin-top: 56px;
     }
-    /*.navbar.container-fluid{
-        display: block;
-    }
-    .container-fluid{
-        margin-left: auto;
-        margin-top: 0px;
-    }*/
-    a.logout{
-        font-size: 13px;
+    #logout{
+        font-size: 14px;
         font-weight: 300;
+        
+    }
+    a.logout{
         text-decoration: none;
         color: red;
     }
