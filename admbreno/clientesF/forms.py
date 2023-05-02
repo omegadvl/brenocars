@@ -14,7 +14,7 @@ class ClienteForm(forms.ModelForm):
 class VeiculoForm(forms.ModelForm):
     class Meta:
         model = Veiculo
-        fields = ['cliente', 'placa', 'ano', 'marca', 'modelo']
+        fields = ['placa', 'ano', 'marca', 'modelo', 'cliente']
 
     cliente = forms.ModelChoiceField(queryset=Cliente.objects.all())
     

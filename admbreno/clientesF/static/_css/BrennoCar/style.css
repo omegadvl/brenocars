@@ -204,13 +204,21 @@
     }
     #id_ano, #id_placa{
         padding-left: 5px;
-        /*margin-right: 10px;*/
         width: 90px;
     }
-    #id_montadora, #id_modelo{
+    #id_marca{
         padding-left: 5px;
-        /*margin-right: 10px;*/
-        width: 130px;
+        width: 200px;
+    }
+    #id_modelo{
+        padding-left: 5px;
+        width: 300px;
+    }
+    #id_cliente{
+        height: 36px;
+        border-radius: 5px;
+        padding-left: 5px;
+        width: 300px;
     }
     #id_mensagem {
         padding-left: 5px;
