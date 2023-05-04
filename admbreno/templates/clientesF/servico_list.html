@@ -1,30 +1,37 @@
 {% extends 'base.html' %}
-
 {% block content %}
-  <h2>Serviços</h2>
+  <h2>Consulta Serviços</h2><br><br>
   <table class="table">
     <thead>
       <tr>
-        <th>Cliente</th>
-        <th>Veículo</th>
-        <th>Descrição</th>
-        <th>Data/Hora</th>
-        <th>Ações</th>
+        <th class="consulta_dataCadastro">Cadastro</th>
+        <th class="consulta_hora">Hora</th>
+        <th class="consulta">Cliente</th>
+        <th class="consulta">Veículo</th>
+        <th class="consulta_ano">Ano</th>
+        <th class="consulta">Descrição</th>
+        <th class="consulta">Valor R$</th>
+        <th class="consulta">Data Entrega</th>
+        <th class="consulta_acoes">Ações</th>
       </tr>
     </thead>
     <tbody>
       {% for servico in servicos %}
         <tr>
+          <td>{{ servico.data_cadastro}}</td>
+          <td>{{ servico.hora_cadastro}}</td>
           <td>{{ servico.veiculo.cliente.nome }}</td>
           <td>{{ servico.veiculo.modelo }} ({{ servico.veiculo.placa }})</td>
+          <td>{{ servico.veiculo.ano }}</td>
           <td>{{ servico.descricao }}</td>
+          <td>{{ servico.valor}}</td>
           <td>{{ servico.data_entrega}}</td>
           <td>
-            <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-sm btn-primary">Editar</a>
-            <form action="{% url 'exclui_servico' servico.pk %}" method="POST" style="display: inline-block;">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
-          </form>
+            <a href="{% url 'edita_servico' servico.pk %}" class="btn btn-warning">Editar</a>
+            <form class="consulta" action="{% url 'exclui_servico' servico.pk %}" method="POST">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este servico?')">Excluir</button>
+            </form>
           </td>
         </tr>
       {% empty %}

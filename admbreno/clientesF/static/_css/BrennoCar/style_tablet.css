@@ -1,45 +1,89 @@
 @media screen and
     (max-width: 992px) {
-    #navbarNav{
+    /*#navbarNav{
+        display: none;
+    }*/
+
+    tbody{
+        width: 100%;
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    /*a.logout{
+        margin-right: 10px;
+    }
+    .logout:hover{
+        color: #98FB98;
+    }*/
+
+   /*.navbar-brand{
+        margin-left: 90px;
+        margin-top: -80px;
+    }*/
+    a.logout{
         display: none;
     }
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
+    .navbar-brand{
+        display: none;
     }
+    .navbar.container-fluid{
+        display: inline;
+    }
+
+    .container-fluid{
+        margin-top: 50px;
+    }
+
+    /*span{
+        margin-left: -150px;
+        width: 280px;
+        color: #FFFFFF;
+        margin-top: -66px;
+    }
+    span.hora{
+        width: 120px;
+    }
+    small{
+        font-size: 14px;
+        color: #f3e97a;
+    }
+
     li a {
         font-weight: 400;
         font-size: 13px;
         padding: 8px 10px;
     }
-    .logo-injecao-eletronica img{
-        position: absolute;
-        margin-top: -40px;
-        margin-left: 140px;
-        width: 65px;
+    #id_username{
+        margin-bottom: 5px;
     }
-    .razaosocial_nome{
-        margin-left: 80px;
+    /*.logo-injecao-eletronica img{
+        margin-left: 10px;
+        position: absolute;
+        margin-top: -55px;
+        float: right;
+        width: 55px;
+    }*/
+    .logo-injecao-eletronica img{
+        display: none;
+    }
+    /*.razaosocial_nome{
+        margin-left: 50px;
         font-size: 16px;
     }
     .clientes, .fornecedores,
     .veiculos{
         width: 250px;
-        margin-left: 14vh;
+        margin-left: 10vh;
         font-size: 16px;
     }
-    form{
-        width: 85%;
-        padding: 1em 1.5em;
-    }
-    form input{
-        margin-top: 0.1em;
-    }
 
-    .juridica{
-        font-size: 14px;
-        margin-left: 400px;
-        margin-top: -8px;
-    }
+    h2{
+        font-size: 18px;
+        margin-left: 100px;
+        position: absolute;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        /*color: #FF6347;
+    }*/
+    
 }

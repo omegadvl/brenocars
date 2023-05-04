@@ -9,12 +9,12 @@ from .models import Fornecedor
 class ClienteForm(forms.ModelForm):
     class Meta:
         model = Cliente
-        fields = ['nome', 'sobrenome', 'profissao', 'cep', 'endereco', 'cidade', 'email', 'data_nascimento', 'cpf', 'telefone', 'celular', 'estado', 'uf']
+        fields = ['nome', 'sobrenome', 'cpf', 'data_nascimento', 'profissao', 'telefone', 'celular', 'cep', 'endereco', 'cidade', 'estado', 'uf', 'email']
 
 class VeiculoForm(forms.ModelForm):
     class Meta:
         model = Veiculo
-        fields = ['marca', 'modelo', 'ano', 'placa', 'cliente']
+        fields = ['placa', 'ano', 'marca', 'modelo', 'cliente']
 
     cliente = forms.ModelChoiceField(queryset=Cliente.objects.all())
     
@@ -28,12 +28,11 @@ class ServicoForm(forms.ModelForm):
 
     class Meta:
         model = Servico
-        fields = ['descricao', 'valor', 'data_entrega', 'cliente', 'veiculo', 'detalhes']
+        fields = ['cliente', 'veiculo', 'detalhes', 'descricao', 'valor', 'data_entrega']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['veiculo'].queryset = Veiculo.objects.all()
-        
 
         if 'cliente' in self.data:
             try:
@@ -55,8 +54,7 @@ class ServicoForm(forms.ModelForm):
         return cleaned_data
 
 
-
 class FornecedorForm(forms.ModelForm):
     class Meta:
         model = Fornecedor
-        fields = ['razao_social', 'cnpj', 'nome_fantasia', 'segmento', 'contato', 'telefone', 'cep', 'celular', 'endereco', 'cidade', 'estado', 'uf', 'email', 'site']
+        fields = ['razao_social', 'nome_fantasia', 'cnpj', 'contato', 'segmento', 'telefone', 'celular', 'cep', 'endereco', 'cidade', 'estado', 'uf', 'email', 'site']

@@ -1,4 +1,4 @@
-@media screen and (min-width: 280px) and
+@media screen and (min-width: 384px) and
     (max-width: 768px) {
     .menu-principal {
         display: block;
@@ -27,7 +27,7 @@
         margin-left: 0;
         width: 100px;
     }
-    #celular,{
+    #celular{
         width: 100px;
 
     }
@@ -39,6 +39,7 @@
         margin-left: 0;
         width: 50px;
     }
+    
     .login{
         margin-top: 400px;
     }

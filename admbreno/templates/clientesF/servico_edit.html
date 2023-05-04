@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Editar Serviço</h2>
+  <h2>Editar Serviço</h2><br>
   <form method="post">
     {% csrf_token %}
     {{ form }}
-    <button type="submit">Salvar</button>
+    <button class="Save" type="submit">Salvar</button>
   </form>
 {% endblock %}

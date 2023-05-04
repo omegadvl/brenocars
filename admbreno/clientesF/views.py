@@ -17,6 +17,7 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return render(request, '../templates/clientesF/index.html')
 
+
 #Criar clientes
 @login_required
 def criar_cliente(request):
@@ -50,6 +51,7 @@ def editar_cliente(request, pk):
         form = ClienteForm(instance=cliente)
     return render(request, '../templates/clientesF/editar_cliente.html', {'form': form})
 
+
 # excluir cliente
 @login_required
 def excluir_cliente(request, pk):
@@ -58,7 +60,7 @@ def excluir_cliente(request, pk):
         cliente.delete()
         return redirect('lista_clientes')
     return render(request, 'excluir_cliente.html', {'cliente': cliente})
-  
+
 
 #veiculos
 @login_required
@@ -72,11 +74,12 @@ def cadastro_veiculo(request):
         form = VeiculoForm()
 
     return render(request, 'clientesF/veiculo_form.html', {'form': form})
-  
+
 @login_required
 def lista_veiculos(request):
     veiculos = Veiculo.objects.all()
     return render(request, 'clientesF/veiculo_list.html', {'veiculos': veiculos})
+
 @login_required
 def exclui_veiculo(request, pk):
     veiculo = get_object_or_404(Veiculo, pk=pk)
@@ -85,6 +88,7 @@ def exclui_veiculo(request, pk):
         veiculo.delete()
         return redirect('lista_veiculos')
     return render(request, 'clientesF/excluir_veiculo.html', {'veiculo': veiculo})
+
 @login_required
 def edita_veiculo(request, pk):
     veiculo = get_object_or_404(Veiculo, pk=pk)
@@ -94,8 +98,8 @@ def edita_veiculo(request, pk):
         form.save()
         return redirect('lista_veiculos')
     return render(request, 'clientesF/veiculo_form.html', {'form': form, 'pk': cliente_pk})
-  
-  
+
+
 ## Servico
 @login_required
 def criar_servico(request):
@@ -121,11 +125,12 @@ def cadastro_servico(request, veiculo_id):
 
     context = {'form': form}
     return render(request, 'clientesF/servico_form.html', context)
-  
+
 @login_required 
 def lista_servicos(request):
     servicos = Servico.objects.all()
     return render(request, 'clientesF/servico_list.html', {'servicos': servicos})
+
 @login_required
 def exclui_servico(request, pk):
     servico = get_object_or_404(Servico, pk=pk)
@@ -134,6 +139,7 @@ def exclui_servico(request, pk):
         servico.delete()
         return redirect('lista_servicos')
     return render(request, 'clientesF/servico_list.html', {'servico': servico})
+
 @login_required
 def edita_servico(request, pk):
     servico = get_object_or_404(Servico, pk=pk)
@@ -146,7 +152,9 @@ def edita_servico(request, pk):
         form = ServicoForm(instance=servico)
     
     return render(request, 'clientesF/edicao_servico.html', {'form': form, 'servico': servico})
-  
+
+
+## Fornecedor
 @login_required   
 def cadastrar_fornecedor(request):
     if request.method == 'POST':
@@ -162,6 +170,7 @@ def cadastrar_fornecedor(request):
 def fornecedores_list(request):
     fornecedores = Fornecedor.objects.all()
     return render(request, 'clientesF/fornecedores_list.html', {'fornecedores': fornecedores})
+
 @login_required   
 def fornecedor_edit(request, pk):
     fornecedor = get_object_or_404(Fornecedor, pk=pk)
@@ -182,8 +191,3 @@ def fornecedor_delete(request, pk):
         fornecedor.delete()
         return redirect('fornecedores_list')
     return render(request, 'fornecedor_delete.html', {'fornecedor': fornecedor})
-  
-  
-  
-  
-  
