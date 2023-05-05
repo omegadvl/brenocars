@@ -89,21 +89,28 @@
             <!--Fim Menu relatórios-->
 
           </ul>
-          <div id="cab-login">
+          <!--<div id="cab-login">
             <span class="bem-vindo">Bem vindo:&nbsp;&nbsp;<small>{{user.first_name}} {{user.last_name}}</small></span>
-            <span class="hora">Hora:<small>&nbsp;&nbsp;{% tempo_atual %}</small> </span>
-          </div>
+            
+          </div>!-->
         </div>
-
           <div id="logout">
             <span><a class="logout" href="{% url 'logout' %}">Logout</a></span>
           </divc>
       </div>
-
     </nav>
     <div class="container-fluid"><br>
       {% block content %}{% endblock %}
     </div>
+    <footer>
+      <div id="rodape">
+        <div>
+          <p class="copyrigth">© Copyrigth 2023 - UNIVESP - Turma 08 - Bacharelado em Tecnologida da Informação</p>
+        </div>  
+          <span class="bem-vindo">Usuário:&nbsp;&nbsp;<small>{{user.first_name}} {{user.last_name}}</small> - Nível: {{user.username}}</span>
+          <span class="hora">Hora:<small>&nbsp;&nbsp;{% tempo_atual %}</small> </span>
+      </div>
+    </footer>
     <!-- Links para os arquivos JS do Bootstrap -->
     <script src="{% static 'js/BrennoCar/mascara.js' %}"></script>
     <script src="{% static 'js/BrennoCar/cep_scripts.js' %}"></script>

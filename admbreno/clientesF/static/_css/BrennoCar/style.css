@@ -15,7 +15,6 @@
         background-position: 50% 70px;
         background-size: contain;
         background-color: rgba(9,9,7, 1);
-        opacity:95%;
     }
     .bg-dark{
         height: 80px;
@@ -50,14 +49,7 @@
     #cab-login{
         margin-top: -66px;
     }
-    span{
-        width: 200px;
-        color: #FFFFFF;
-        margin-top: -66px;
-    }
-    span.bem-vindo{
-        margin-right: 80px;
-    }
+    
     small{
         font-size: 14px;
         color: #f3e97a;
@@ -369,6 +361,7 @@
         color: #FFFFFF;
     }
     .btn.btn-primary{
+        float: right;
         font-size: 14px;
         padding: 5px 6px;
         position: absolute;
@@ -407,6 +400,7 @@
     }
     form{
         margin-top: 96px;
+        margin-bottom: 30px;
         padding: 40px 60px;
         border-radius: 10px;
         border: 2px solid #FF6347;
@@ -429,5 +423,30 @@
     }
     #id_pesquisa_cf{
         width: 300px;
+    }
+    #rodape{
+        height: 62px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .bem-vindo{
+        float: left;
+        margin-top: 20px;
+        font-size: 14px;
+        margin-left: 50px;
+        color: #FFFFFF;
+    }
+    .hora{
+        font-size: 14px;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        float: right;
+        margin-top: 20px;
+        color: #FFFFFF;
+        margin-right: 50px;
+    }
+    .copyrigth{
+        position: absolute;
+        margin-top: 20px;
+        font-size: 14px;        
+        color: #FFFFFF;
     }
 }
