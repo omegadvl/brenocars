@@ -267,7 +267,7 @@
         margin-top: 220px;
     }
     ul li{
-        font-size: 13px;
+        font-size: 14px;
         list-style: none;
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(255, 98, 0);
@@ -277,10 +277,10 @@
     }
     #logout{
         font-size: 14px;
-        font-weight: 300;
-        
+        margin-top: -20px;
     }
     a.logout{
+        
         text-decoration: none;
         color: red;
     }
