@@ -65,7 +65,10 @@
         border-radius: 5px;
         /*background-color: rgba(255,255,255,0.3);*/
     }
-    #id_username, #id_password{
+    #id_username{
+        margin-bottom: 8px;
+    }
+    #id_password{
         margin-bottom: 8px;
     }
     p{
@@ -265,6 +268,7 @@
         color: yellow;
         font-size: 16px;
         margin-top: 220px;
+        margin-bottom: 380px;
     }
     ul li{
         font-size: 14px;
