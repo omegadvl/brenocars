@@ -268,7 +268,7 @@
         color: yellow;
         font-size: 16px;
         margin-top: 220px;
-        margin-bottom: 380px;
+        margin-bottom: 390px;
     }
     ul li{
         font-size: 14px;
@@ -403,8 +403,7 @@
         color: #FFFFFF;
     }
     form{
-        margin-top: 96px;
-        margin-bottom: 30px;
+        margin-top: 106px;
         padding: 40px 60px;
         border-radius: 10px;
         border: 2px solid #FF6347;
@@ -428,7 +427,10 @@
     #id_pesquisa_cf{
         width: 300px;
     }
-    #rodape{
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         height: 62px;
         background-color: rgba(255,255,255,0.2);
     }
@@ -436,7 +438,7 @@
         float: left;
         margin-top: 20px;
         font-size: 14px;
-        margin-left: 50px;
+        margin-left: 40px;
         color: #FFFFFF;
     }
     .hora{
@@ -445,12 +447,12 @@
         float: right;
         margin-top: 20px;
         color: #FFFFFF;
-        margin-right: 50px;
+        margin-right: 40px;
     }
     .copyrigth{
         position: absolute;
         margin-top: 20px;
-        font-size: 14px;        
+        font-size: 14px;
         color: #FFFFFF;
     }
 }
