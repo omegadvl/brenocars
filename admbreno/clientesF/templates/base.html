@@ -45,8 +45,6 @@
             src="{% static '_images/BrennoCar/Injecao_eletronica-499x499.png' %}">
       </div>
       <div class="container-fluid">
-        
-          
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +71,6 @@
                 <li><a class="dropdown-item" href="{% url 'fornecedores_list' %}">Fornecedores</a></li>
               </ul>
             </li>
-
             <!--Menu relatórios-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="consultaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -87,12 +84,7 @@
               </ul>
             </li>
             <!--Fim Menu relatórios-->
-
           </ul>
-          <!--<div id="cab-login">
-            <span class="bem-vindo">Bem vindo:&nbsp;&nbsp;<small>{{user.first_name}} {{user.last_name}}</small></span>
-            
-          </div>!-->
         </div>
           <div id="logout">
             <span><a class="logout" href="{% url 'logout' %}">Logout</a></span>
