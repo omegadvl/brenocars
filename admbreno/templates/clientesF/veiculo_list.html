@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <h2>Consulta Veículos</h2><br><br>
-
+    <a href="{% url 'cadastro_veiculo' %}" class="btn btn-primary">Cadastrar Veículo</a>
 <table class="table">
   <thead>
     <tr>
@@ -37,7 +37,5 @@
     {% endfor %}
   </tbody>
 </table>
-
-<a href="{% url 'cadastro_veiculo' %}" class="btn btn-primary">Cadastrar Veículo</a>
 
 {% endblock %}

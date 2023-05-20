@@ -2,7 +2,7 @@
 
 {% block content %}
 <h2>Consulta Fornecedores</h2><br><br>
-
+    <a href="{% url 'cadastrar_fornecedor' %}" class="btn btn-primary">Cadastrar Fornecedor</a>
   <table class="table">
     <thead>
       <tr>
@@ -55,7 +55,7 @@
       {% endfor %}
     </tbody>
   </table>
-<a href="{% url 'cadastrar_fornecedor' %}" class="btn btn-primary">Cadastrar Fornecedor</a>
+
 
  
 {% endblock %}

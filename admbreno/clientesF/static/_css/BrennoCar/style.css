@@ -15,7 +15,6 @@
         background-position: 50% 70px;
         background-size: contain;
         background-color: rgba(9,9,7, 1);
-        opacity:95%;
     }
     .bg-dark{
         height: 80px;
@@ -50,14 +49,7 @@
     #cab-login{
         margin-top: -66px;
     }
-    span{
-        width: 200px;
-        color: #FFFFFF;
-        margin-top: -66px;
-    }
-    span.bem-vindo{
-        margin-right: 80px;
-    }
+    
     small{
         font-size: 14px;
         color: #f3e97a;
@@ -73,7 +65,10 @@
         border-radius: 5px;
         /*background-color: rgba(255,255,255,0.3);*/
     }
-    #id_username, #id_password{
+    #id_username{
+        margin-bottom: 8px;
+    }
+    #id_password{
         margin-bottom: 8px;
     }
     p{
@@ -273,9 +268,10 @@
         color: yellow;
         font-size: 16px;
         margin-top: 220px;
+        margin-bottom: 390px;
     }
     ul li{
-        font-size: 13px;
+        font-size: 14px;
         list-style: none;
         font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(255, 98, 0);
@@ -285,10 +281,10 @@
     }
     #logout{
         font-size: 14px;
-        font-weight: 300;
-        
+        margin-top: -20px;
     }
     a.logout{
+        
         text-decoration: none;
         color: red;
     }
@@ -369,6 +365,7 @@
         color: #FFFFFF;
     }
     .btn.btn-primary{
+        float: right;
         font-size: 14px;
         padding: 5px 6px;
         position: absolute;
@@ -406,7 +403,7 @@
         color: #FFFFFF;
     }
     form{
-        margin-top: 96px;
+        margin-top: 106px;
         padding: 40px 60px;
         border-radius: 10px;
         border: 2px solid #FF6347;
@@ -429,5 +426,33 @@
     }
     #id_pesquisa_cf{
         width: 300px;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 62px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .bem-vindo{
+        float: left;
+        margin-top: 20px;
+        font-size: 14px;
+        margin-left: 40px;
+        color: #FFFFFF;
+    }
+    .hora{
+        font-size: 14px;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        float: right;
+        margin-top: 20px;
+        color: #FFFFFF;
+        margin-right: 40px;
+    }
+    .copyrigth{
+        position: absolute;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #FFFFFF;
     }
 }
